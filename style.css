@@ -1,0 +1,114 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    background-color: #202124;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* app-area code start */
+
+.app-area {
+    max-width: 750px;
+    background-color: #303134;
+    margin: 50px auto;
+    padding: 50px;
+    border: 1px solid #5f6368;
+  }
+  .app-area h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+  .form-group{
+    display: flex;
+  }
+  .form-group input{
+    flex: 1;
+    background-color: transparent;
+    border: 1px solid #5f6368;
+    padding: 15px;
+    outline: none;
+    color: #fff;
+    margin-right: 15px;
+  }
+  .form-group button{
+    cursor: pointer;
+    padding: 15px 30px;
+  }
+
+  /* task-area code start */
+
+.task-area{
+    margin-top: 40px;
+}
+.task-area h2{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.single-task{
+    display: flex;
+    background-color: #202124;
+    padding: 10px;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+.single-task::after{
+    position: absolute;
+    content: "\f111";
+    font-weight: 900;
+    font-family: "Font Awesome 6 Free";
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+}
+
+.single-task.task-completed::after{
+    content: "\f00c";
+}
+.single-task input{
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 10px;
+}
+.single-task button{
+    padding: 10px 15px;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.edite-task{
+    background-color: #F8B408;
+}
+.complete-task{
+    background-color: #187A45;
+    color: #fff;
+}
+.delete-task{
+    background-color: #C82A36;
+    color: #fff;
+}
+
+
+/* Other css */
+#error-Div{
+    color: #F8B408;
+    font-size: 14px;
+    margin-top: 10px;
+}
